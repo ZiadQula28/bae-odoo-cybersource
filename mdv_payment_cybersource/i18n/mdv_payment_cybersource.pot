@@ -1,0 +1,861 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mdv_payment_cybersource
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-17 03:31+0000\n"
+"PO-Revision-Date: 2026-10-17 03:31+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.payment_provider_form
+msgid "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_provider__mdv_cs_payer_auth
+msgid "3-D Secure (Payer Authentication)"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_3ds_status
+msgid "3-D Secure Result"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_3ds_version
+msgid "3-D Secure Version"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-javascript
+#: code:addons/mdv_payment_cybersource/static/src/js/cybersource_microform.js:0
+msgid "3-D Secure verification"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.inline_form
+msgid ""
+"<i class=\"fa fa-lock me-1\" role=\"img\" aria-label=\"Secure\" title=\"Secure\"/>\n"
+"                Your card details are entered in fields hosted by CyberSource and never reach this\n"
+"                website."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.inline_form
+msgid "<option value=\"\">MM</option>"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.inline_form
+msgid "<option value=\"\">YYYY</option>"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:payment.provider,auth_msg:mdv_payment_cybersource.payment_provider_mdv_cybersource
+msgid "<span>Your payment has been authorized.</span>"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:payment.provider,cancel_msg:mdv_payment_cybersource.payment_provider_mdv_cybersource
+msgid "<span>Your payment has been cancelled.</span>"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:payment.provider,pending_msg:mdv_payment_cybersource.payment_provider_mdv_cybersource
+msgid ""
+"<span>Your payment has been processed but is waiting for approval.</span>"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:payment.provider,done_msg:mdv_payment_cybersource.payment_provider_mdv_cybersource
+msgid "<span>Your payment has been processed.</span>"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_log_ids
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.payment_provider_form
+msgid "API Log"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_avs_code
+msgid "AVS Result"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_transaction.py:0
+msgid "Accepted after review."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_transaction.py:0
+msgid "Accepted by CyberSource."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_approval_code
+msgid "Approval Code"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,help:mdv_payment_cybersource.field_payment_provider__mdv_cs_key_id
+msgid ""
+"Business Center > Payment Configuration > Key Management > REST - Shared "
+"Secret: the key (the 'Key' column, a UUID)."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_cvv_code
+msgid "CVV Result"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_capture_ref
+msgid "Capture ID"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_card_masked
+msgid "Card Number"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_token__mdv_cs_card_type
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_card_type
+msgid "Card Type"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.inline_form
+msgid "Card number"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.payment_transaction_form
+msgid "Check Status on CyberSource"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_provider__code
+msgid "Code"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__company_id
+msgid "Company"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+msgid "Connection successful"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/controllers/main.py:0
+msgid "Continue"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.payment_provider_form
+msgid "Create a webhook subscription on CyberSource for this database?"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields.selection,name:mdv_payment_cybersource.selection__payment_provider__code__mdv_cybersource
+#: model:payment.provider,name:mdv_payment_cybersource.payment_provider_mdv_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.payment_provider_form
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.payment_transaction_form
+msgid "CyberSource"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+#: model:ir.actions.act_window,name:mdv_payment_cybersource.action_mdv_cybersource_log
+#: model:ir.model,name:mdv_payment_cybersource.model_mdv_cybersource_log
+#: model:ir.ui.menu,name:mdv_payment_cybersource.menu_mdv_cybersource_log
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.payment_transaction_form
+msgid "CyberSource API Log"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_token__mdv_cs_customer_ref
+msgid "CyberSource Customer"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_reason
+msgid "CyberSource Reason"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_status
+msgid "CyberSource Status"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+msgid "CyberSource accepted the credentials (%s environment)."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+msgid "CyberSource did not return a capture context."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+msgid "CyberSource did not return a webhook security key."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+msgid ""
+"CyberSource only delivers webhooks to an HTTPS address. Set the web.base.url"
+" of this database to its public HTTPS address first."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+msgid "CyberSource returned an unexpected Microform library."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+msgid "CyberSource returned an unreadable capture context."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+msgid "CyberSource will send its notifications to %s."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_transaction.py:0
+msgid "CyberSource: %(status)s - %(message)s"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+msgid "CyberSource: %s"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_transaction.py:0
+msgid "CyberSource: the payment was declined or rejected after review."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.actions.server,name:mdv_payment_cybersource.cron_mdv_cybersource_sync_ir_actions_server
+msgid "CyberSource: update payments held for review"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__direction
+msgid "Direction"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_ir_http__display_name
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__display_name
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_provider__display_name
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_token__display_name
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_eci
+msgid "ECI"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__path
+msgid "Endpoint"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__error
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.mdv_cybersource_log_form
+msgid "Error"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.mdv_cybersource_log_search
+msgid "Failed"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model,name:mdv_payment_cybersource.model_ir_http
+msgid "HTTP Routing"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__status_code
+msgid "HTTP Status"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_transaction.py:0
+msgid "Held for review by the fraud screening."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_ir_http__id
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__id
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_provider__id
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_token__id
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__id
+msgid "ID"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_provider__mdv_cs_key_id
+msgid "Key ID"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_3ds_auth_ref
+msgid "Mdv Cs 3Ds Auth Ref"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_3ds_ref
+msgid "Mdv Cs 3Ds Ref"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_provider__mdv_cs_log_count
+msgid "Mdv Cs Log Count"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_transient_token
+msgid "Mdv Cs Transient Token"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_provider__mdv_cs_merchant_id
+msgid "Merchant ID"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__method
+msgid "Method"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.inline_form
+msgid "Month"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_token__mdv_cs_network_txn_ref
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_network_txn_ref
+msgid "Network Transaction ID"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,help:mdv_payment_cybersource.field_payment_token__mdv_cs_network_txn_ref
+msgid ""
+"Network transaction id of the first payment, sent with merchant-initiated "
+"payments of this card."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_provider__mdv_cs_webhook_url
+msgid "Notification URL"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__operation
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.mdv_cybersource_log_search
+msgid "Operation"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,help:mdv_payment_cybersource.field_payment_provider__mdv_cs_descriptor
+msgid ""
+"Optional name shown on the statement of the customer "
+"(merchantInformation.merchantDescriptor.name). Your processor must support "
+"it."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model,name:mdv_payment_cybersource.model_payment_provider
+msgid "Payment Provider"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model,name:mdv_payment_cybersource.model_payment_token
+msgid "Payment Token"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model,name:mdv_payment_cybersource.model_payment_transaction
+msgid "Payment Transaction"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-javascript
+#: code:addons/mdv_payment_cybersource/static/src/interactions/payment_form.js:0
+msgid "Payment processing failed"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-javascript
+#: code:addons/mdv_payment_cybersource/static/src/js/cybersource_microform.js:0
+msgid "Please check the card number, expiry date and security code."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-javascript
+#: code:addons/mdv_payment_cybersource/static/src/interactions/payment_form.js:0
+msgid "Please select the expiry date of the card."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__provider_id
+msgid "Provider"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_transaction__mdv_cs_reconciliation_ref
+msgid "Reconciliation ID"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.payment_provider_form
+msgid "Register Webhook"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__request_body
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.mdv_cybersource_log_form
+msgid "Request"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__response_body
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.mdv_cybersource_log_form
+msgid "Response"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__result
+msgid "Result"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,help:mdv_payment_cybersource.field_payment_provider__mdv_cs_payer_auth
+msgid ""
+"Run 3-D Secure 2 with the bank of the card (Visa Secure, Mastercard Identity"
+" Check, Amex SafeKey...). Frictionless when the bank allows it, a challenge "
+"window otherwise. Payer Authentication must be enabled on your CyberSource "
+"account."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.inline_form
+msgid "Security code"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_provider__mdv_cs_send_order_lines
+msgid "Send Order Lines"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,help:mdv_payment_cybersource.field_payment_provider__mdv_cs_send_order_lines
+msgid ""
+"Send the lines of the sales order or invoice (orderInformation.lineItems): "
+"they appear in the Business Center and improve the fraud screening."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields.selection,name:mdv_payment_cybersource.selection__mdv_cybersource_log__direction__out
+msgid "Sent"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_provider__mdv_cs_secret_key
+msgid "Shared Secret Key"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/const.py:0
+msgid "Some billing details are missing."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/const.py:0
+msgid "Some payment details are not valid."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_provider__mdv_cs_descriptor
+msgid "Statement Descriptor"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__success
+msgid "Success"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.payment_provider_form
+msgid "Test Connection"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.payment_provider_form
+msgid ""
+"Test mode uses apitest.cybersource.com, Enabled uses api.cybersource.com.\n"
+"                        Create the key in the Business Center: Payment Configuration &gt; Key\n"
+"                        Management &gt; Generate Key &gt; REST - Shared Secret."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.inline_form
+msgid ""
+"Test mode: use the card 4111 1111 1111 1111, any future date and any code."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_transaction.py:0
+msgid "The 3-D Secure verification expired. Please pay again."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/const.py:0
+msgid "The 3-D Secure verification with your bank failed."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,help:mdv_payment_cybersource.field_mdv_cybersource_log__result
+msgid "The `status` of the CyberSource answer (AUTHORIZED, DECLINED...)."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+msgid "The address of the payment page is not valid."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_transaction.py:0
+msgid ""
+"The bank approved only part of the amount. The payment was canceled; please "
+"use another card."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/const.py:0
+msgid "The bank asks for a 3-D Secure verification."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_transaction.py:0
+msgid "The bank asks for a 3-D Secure verification. Please pay again."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,help:mdv_payment_cybersource.field_payment_provider__mdv_cs_secret_key
+msgid ""
+"The base64 shared secret of the REST - Shared Secret key. It is shown once, "
+"when the key is generated."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,help:mdv_payment_cybersource.field_payment_provider__mdv_cs_webhook_secret
+msgid ""
+"The base64 webhook security key used to check the signature of "
+"notifications."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/const.py:0
+msgid "The billing address does not match the address of the card."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_transaction.py:0
+msgid "The card details could not be read. Please try again."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-javascript
+#: code:addons/mdv_payment_cybersource/static/src/interactions/payment_form.js:0
+#: code:addons/mdv_payment_cybersource/static/src/js/cybersource_microform.js:0
+msgid "The card form could not be loaded."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/controllers/main.py:0
+msgid "The card form could not be loaded. Please try again later."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/const.py:0
+msgid "The card has expired."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/const.py:0
+msgid "The card has insufficient funds."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/const.py:0
+msgid "The card number is not valid."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/const.py:0
+msgid "The card was declined by the bank."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/const.py:0
+msgid "The credit limit of the card is reached."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,help:mdv_payment_cybersource.field_payment_token__mdv_cs_customer_ref
+msgid "The customer token of the Token Management Service."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,help:mdv_payment_cybersource.field_payment_transaction__mdv_cs_capture_ref
+msgid "The id of the capture, which refunds are made on."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,help:mdv_payment_cybersource.field_payment_provider__mdv_cs_webhook_key_id
+msgid ""
+"The key ID of the webhook security key (the keyId of the v-c-signature "
+"header)."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/controllers/main.py:0
+msgid "The payment could not be found."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_transaction.py:0
+msgid ""
+"The payment is authorized and held for review by the fraud screening "
+"(Decision Manager)."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_transaction.py:0
+msgid "The payment was declined."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/const.py:0
+msgid "The payment was refused by the fraud screening."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_transaction.py:0
+msgid "The saved card is not linked to CyberSource."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/const.py:0
+msgid "The security code (CVV) is not correct."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+msgid "The statement descriptor must use plain ASCII letters."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,help:mdv_payment_cybersource.field_payment_provider__code
+msgid "The technical code of this payment provider."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/const.py:0
+msgid "This card cannot be used for this purchase."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/const.py:0
+msgid "This payment was already sent."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_mdv_cybersource_log__transaction_id
+msgid "Transaction"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-javascript
+#: code:addons/mdv_payment_cybersource/static/src/js/cybersource_microform.js:0
+msgid "Unexpected card form library."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_transaction.py:0
+msgid "Updated from CyberSource."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/controllers/main.py:0
+msgid "Verification finished. You are redirected to the payment status."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-javascript
+#: code:addons/mdv_payment_cybersource/static/src/js/cybersource_microform.js:0
+msgid "Verify the payment with your bank"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields.selection,name:mdv_payment_cybersource.selection__mdv_cybersource_log__direction__in
+msgid "Webhook"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_provider__mdv_cs_webhook_key_id
+msgid "Webhook Key ID"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_provider__mdv_cs_webhook_secret
+msgid "Webhook Secret"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,field_description:mdv_payment_cybersource.field_payment_provider__mdv_cs_webhook_ref
+msgid "Webhook Subscription ID"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+msgid "Webhook registered"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.mdv_cybersource_log_search
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.payment_provider_form
+msgid "Webhooks"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,help:mdv_payment_cybersource.field_payment_provider__mdv_cs_webhook_url
+msgid "Where CyberSource sends its webhook notifications."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,help:mdv_payment_cybersource.field_payment_transaction__mdv_cs_3ds_status
+msgid ""
+"Y: authenticated, A: attempted, N: failed, U: unavailable, R: rejected, C: "
+"challenge."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model_terms:ir.ui.view,arch_db:mdv_payment_cybersource.inline_form
+msgid "Year"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#: model:ir.model.fields,help:mdv_payment_cybersource.field_payment_provider__mdv_cs_merchant_id
+msgid ""
+"Your CyberSource merchant ID (organization ID), as shown in the Business "
+"Center."
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+msgid "production"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+msgid "provider_id"
+msgstr ""
+
+#. module: mdv_payment_cybersource
+#. odoo-python
+#: code:addons/mdv_payment_cybersource/models/payment_provider.py:0
+msgid "test"
+msgstr ""

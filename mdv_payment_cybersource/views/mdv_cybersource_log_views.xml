@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="mdv_cybersource_log_list" model="ir.ui.view">
+        <field name="name">mdv.cybersource.log.list</field>
+        <field name="model">mdv.cybersource.log</field>
+        <field name="arch" type="xml">
+            <list create="false" edit="false" decoration-danger="not success">
+                <field name="create_date"/>
+                <field name="direction"/>
+                <field name="operation"/>
+                <field name="method"/>
+                <field name="path"/>
+                <field name="status_code"/>
+                <field name="result"/>
+                <field name="transaction_id"/>
+                <field name="provider_id"/>
+                <field name="success" column_invisible="True"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="mdv_cybersource_log_form" model="ir.ui.view">
+        <field name="name">mdv.cybersource.log.form</field>
+        <field name="model">mdv.cybersource.log</field>
+        <field name="arch" type="xml">
+            <form create="false" edit="false">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="create_date"/>
+                            <field name="direction"/>
+                            <field name="operation"/>
+                            <field name="method"/>
+                            <field name="path"/>
+                        </group>
+                        <group>
+                            <field name="status_code"/>
+                            <field name="result"/>
+                            <field name="success"/>
+                            <field name="transaction_id"/>
+                            <field name="provider_id"/>
+                        </group>
+                    </group>
+                    <group string="Error" invisible="not error">
+                        <field name="error" nolabel="1" colspan="2"/>
+                    </group>
+                    <group string="Request" invisible="not request_body">
+                        <field name="request_body" nolabel="1" colspan="2" widget="code" options="{'mode': 'javascript'}"/>
+                    </group>
+                    <group string="Response" invisible="not response_body">
+                        <field name="response_body" nolabel="1" colspan="2" widget="code" options="{'mode': 'javascript'}"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="mdv_cybersource_log_search" model="ir.ui.view">
+        <field name="name">mdv.cybersource.log.search</field>
+        <field name="model">mdv.cybersource.log</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="transaction_id"/>
+                <field name="path"/>
+                <field name="operation"/>
+                <filter name="failed" string="Failed" domain="[('success', '=', False)]"/>
+                <filter name="webhooks" string="Webhooks" domain="[('direction', '=', 'in')]"/>
+                <group>
+                    <filter name="group_operation" string="Operation" context="{'group_by': 'operation'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_mdv_cybersource_log" model="ir.actions.act_window">
+        <field name="name">CyberSource API Log</field>
+        <field name="res_model">mdv.cybersource.log</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_mdv_cybersource_log"
+              name="CyberSource API Log"
+              parent="account.root_payment_menu"
+              action="action_mdv_cybersource_log"
+              groups="base.group_system"
+              sequence="90"/>
+
+</odoo>

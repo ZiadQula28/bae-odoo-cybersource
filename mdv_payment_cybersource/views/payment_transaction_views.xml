@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="payment_transaction_form" model="ir.ui.view">
+        <field name="name">CyberSource Transaction Form</field>
+        <field name="model">payment.transaction</field>
+        <field name="inherit_id" ref="payment.payment_transaction_form"/>
+        <field name="arch" type="xml">
+            <field name="state" position="before">
+                <button type="object" name="action_mdv_cs_sync"
+                        string="Check Status on CyberSource"
+                        invisible="provider_code != 'mdv_cybersource' or not provider_reference or state not in ('pending', 'authorized', 'draft')"/>
+            </field>
+            <group name="transaction_details" position="after">
+                <group name="mdv_cs_details" string="CyberSource"
+                       invisible="provider_code != 'mdv_cybersource'">
+                    <field name="mdv_cs_status"/>
+                    <field name="mdv_cs_reason" invisible="not mdv_cs_reason"/>
+                    <field name="mdv_cs_card_type" invisible="not mdv_cs_card_type"/>
+                    <field name="mdv_cs_card_masked" invisible="not mdv_cs_card_masked"/>
+                    <field name="mdv_cs_approval_code" invisible="not mdv_cs_approval_code"/>
+                    <field name="mdv_cs_avs_code" invisible="not mdv_cs_avs_code"/>
+                    <field name="mdv_cs_cvv_code" invisible="not mdv_cs_cvv_code"/>
+                    <field name="mdv_cs_3ds_status" invisible="not mdv_cs_3ds_status"/>
+                    <field name="mdv_cs_eci" invisible="not mdv_cs_eci"/>
+                    <field name="mdv_cs_3ds_version" invisible="not mdv_cs_3ds_version"/>
+                    <field name="mdv_cs_reconciliation_ref" invisible="not mdv_cs_reconciliation_ref"/>
+                    <field name="mdv_cs_capture_ref" invisible="not mdv_cs_capture_ref"/>
+                    <field name="mdv_cs_network_txn_ref" groups="base.group_no_one"/>
+                </group>
+            </group>
+            <field name="child_transaction_ids" position="after">
+                <separator string="CyberSource API Log" groups="base.group_system"
+                           invisible="provider_code != 'mdv_cybersource' or not mdv_cs_log_ids"/>
+                    <field name="mdv_cs_log_ids" readonly="1" groups="base.group_system"
+                           invisible="provider_code != 'mdv_cybersource' or not mdv_cs_log_ids">
+                        <list>
+                            <field name="create_date"/>
+                            <field name="operation"/>
+                            <field name="method"/>
+                            <field name="path"/>
+                            <field name="status_code"/>
+                            <field name="result"/>
+                            <field name="success" widget="boolean"/>
+                        </list>
+                    </field>
+            </field>
+        </field>
+    </record>
+
+    <record id="payment_token_form" model="ir.ui.view">
+        <field name="name">CyberSource Token Form</field>
+        <field name="model">payment.token</field>
+        <field name="inherit_id" ref="payment.payment_token_form"/>
+        <field name="arch" type="xml">
+            <field name="provider_ref" position="after">
+                <field name="provider_code" invisible="1"/>
+                <field name="mdv_cs_card_type" invisible="provider_code != 'mdv_cybersource'"/>
+                <field name="mdv_cs_customer_ref" invisible="provider_code != 'mdv_cybersource'"/>
+                <field name="mdv_cs_network_txn_ref" invisible="provider_code != 'mdv_cybersource'"
+                       groups="base.group_no_one"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

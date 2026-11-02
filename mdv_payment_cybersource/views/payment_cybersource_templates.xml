@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Rendered under the CyberSource card payment method of the payment form. -->
+    <template id="inline_form">
+        <div name="o_mdv_cs_container" class="o_mdv_cs_container"
+             t-att-data-mdv-cs-values="provider_sudo._mdv_cs_inline_values()">
+            <div class="row g-2">
+                <div class="col-12">
+                    <label class="form-label small mb-1"
+                           t-attf-for="o_mdv_cs_number_{{provider_sudo.id}}">Card number</label>
+                    <div class="position-relative">
+                        <div name="o_mdv_cs_number" class="form-control o_mdv_cs_field"
+                             t-attf-id="o_mdv_cs_number_{{provider_sudo.id}}"/>
+                        <span name="o_mdv_cs_brand" class="o_mdv_cs_brand small text-muted"/>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <label class="form-label small mb-1"
+                           t-attf-for="o_mdv_cs_exp_month_{{provider_sudo.id}}">Month</label>
+                    <select name="o_mdv_cs_exp_month" class="form-select"
+                            t-attf-id="o_mdv_cs_exp_month_{{provider_sudo.id}}">
+                        <option value="">MM</option>
+                        <t t-foreach="range(1, 13)" t-as="month">
+                            <option t-att-value="'%02d' % month" t-out="'%02d' % month"/>
+                        </t>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <label class="form-label small mb-1"
+                           t-attf-for="o_mdv_cs_exp_year_{{provider_sudo.id}}">Year</label>
+                    <select name="o_mdv_cs_exp_year" class="form-select"
+                            t-attf-id="o_mdv_cs_exp_year_{{provider_sudo.id}}">
+                        <option value="">YYYY</option>
+                        <t t-foreach="provider_sudo._mdv_cs_expiry_years()" t-as="year">
+                            <option t-att-value="year" t-out="year"/>
+                        </t>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <label class="form-label small mb-1"
+                           t-attf-for="o_mdv_cs_cvv_{{provider_sudo.id}}">Security code</label>
+                    <div name="o_mdv_cs_cvv" class="form-control o_mdv_cs_field"
+                         t-attf-id="o_mdv_cs_cvv_{{provider_sudo.id}}"/>
+                </div>
+            </div>
+            <p class="small text-muted mb-0 mt-2">
+                <i class="fa fa-lock me-1" role="img" aria-label="Secure" title="Secure"/>
+                Your card details are entered in fields hosted by CyberSource and never reach this
+                website.
+            </p>
+            <p t-if="provider_sudo.state == 'test'" class="small text-muted mb-0">
+                Test mode: use the card 4111 1111 1111 1111, any future date and any code.
+            </p>
+            <div name="o_mdv_cs_error" class="alert alert-warning small mt-2 mb-0 d-none"
+                 role="alert"/>
+        </div>
+    </template>
+
+</odoo>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="payment_provider_form" model="ir.ui.view">
+        <field name="name">CyberSource Provider Form</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment.payment_provider_form"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button name="action_mdv_cs_view_logs" type="object"
+                        class="oe_stat_button" icon="fa-list-alt"
+                        invisible="code != 'mdv_cybersource'" groups="base.group_system">
+                    <field name="mdv_cs_log_count" widget="statinfo" string="API Log"/>
+                </button>
+            </div>
+            <group name="provider_credentials" position="inside">
+                <group invisible="code != 'mdv_cybersource'" name="mdv_cs_credentials">
+                    <field name="mdv_cs_merchant_id"
+                           required="code == 'mdv_cybersource' and state != 'disabled'"/>
+                    <field name="mdv_cs_key_id"
+                           required="code == 'mdv_cybersource' and state != 'disabled'"
+                           placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"/>
+                    <field name="mdv_cs_secret_key" password="True"
+                           required="code == 'mdv_cybersource' and state != 'disabled'"/>
+                    <div colspan="2" class="text-muted small">
+                        Test mode uses apitest.cybersource.com, Enabled uses api.cybersource.com.
+                        Create the key in the Business Center: Payment Configuration &gt; Key
+                        Management &gt; Generate Key &gt; REST - Shared Secret.
+                    </div>
+                    <div colspan="2" invisible="state == 'disabled'">
+                        <button name="action_mdv_cs_test_connection" type="object"
+                                string="Test Connection" class="btn-secondary" icon="fa-plug"/>
+                    </div>
+                </group>
+                <group invisible="code != 'mdv_cybersource'" name="mdv_cs_webhooks"
+                       string="Webhooks">
+                    <field name="mdv_cs_webhook_url" widget="CopyClipboardChar"/>
+                    <field name="mdv_cs_webhook_key_id"/>
+                    <field name="mdv_cs_webhook_secret" password="True"/>
+                    <field name="mdv_cs_webhook_ref" invisible="not mdv_cs_webhook_ref"/>
+                    <div colspan="2" invisible="state == 'disabled'">
+                        <button name="action_mdv_cs_register_webhook" type="object"
+                                string="Register Webhook" class="btn-secondary" icon="fa-bell"
+                                confirm="Create a webhook subscription on CyberSource for this database?"/>
+                    </div>
+                </group>
+            </group>
+            <group name="provider_config" position="inside">
+                <group invisible="code != 'mdv_cybersource'" name="mdv_cs_options"
+                       string="CyberSource">
+                    <field name="mdv_cs_payer_auth"/>
+                    <field name="mdv_cs_send_order_lines"/>
+                    <field name="mdv_cs_descriptor"/>
+                </group>
+            </group>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,48 @@
+.o_mdv_cs_container {
+    .o_mdv_cs_field {
+        height: calc(1.5em + 0.75rem + 2px);
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        &.flex-microform-focused {
+            border-color: #86b7fe;
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        }
+        &.flex-microform-invalid {
+            border-color: #dc3545;
+        }
+    }
+    .o_mdv_cs_brand {
+        position: absolute;
+        right: 0.75rem;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+}
+
+.o_mdv_cs_challenge {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .o_mdv_cs_challenge_box {
+        background: #fff;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        max-width: 100%;
+    }
+    .o_mdv_cs_challenge_title {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+    .o_mdv_cs_challenge_frame {
+        width: 420px;
+        max-width: calc(100vw - 3rem);
+        height: 520px;
+        max-height: calc(100vh - 6rem);
+        border: 0;
+    }
+}
